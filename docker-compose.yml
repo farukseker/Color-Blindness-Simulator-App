@@ -1,0 +1,9 @@
+services:
+  color-blind:
+    build: .
+    container_name: color-blind_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    restart: unless-stopped
